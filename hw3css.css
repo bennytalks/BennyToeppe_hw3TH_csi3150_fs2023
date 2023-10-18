@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+
 body {
-  font-family: Arial, sans-serif; /* Choose your preferred font stack */
+  font-family:Cabin, "Cabin Condensed", "Cabin Condensed Medium", "Cabin Condensed SemiBold", "Cabin Medium", "Cabin SemiBold", Boho;
   font-size: 16px;
   line-height: 1.5;
   background-color: #f0f0f0; /* Set a default background color */
@@ -13,38 +14,54 @@ body {
   display: flex;
 	padding: 30px;
   align-items: center;
-  text-align: center;
+  text-align:inherit;
 }
 
+.containervert{
+	height:100vw;
+	display: flex;
+	padding: 30px;
+  align-items: center;
+  text-align:inherit;
+}
 .half {
   flex: 1; /* This will make both halves equal in width */
-  /* Add other styles or content as needed */
 }
 
 .strip {
-  width: 100vw; /* Full viewport width for each strip */
-  align-items: center;
-  text-align: center;
-	display:flex;
-  background-color: #3498db; /* Background color for each strip */
-  color: #fff; /* Text color */
-  font-size: 2rem;
+    width: 100vw; /* Full viewport width for each strip */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: rgba(0,0,0,0.30);
+    color: #fff; /* Text color */
+    font-size: 2rem;
 }
 
 #section1 {
-  background-color: #3498db;
-	align-items: center;
-	display: inline-flex;
+    background-image: url(media/lake-7753345_1280.jpg);
+    align-items: center;
+    display: inline-flex;
+	background-size: cover;
+	padding-bottom: 40px;
+	background-color: rgba(0,0,0,0.40);
+	background-blend-mode: overlay;
 }
 
 #section2 {
-  background-color: #e74c3c;
-	display: flex;
+    display: flex;
+	background-color: rgba(0,0,0,0.40);
+	background-blend-mode: overlay;
+    background-image: url(media/detroit-406894_1280.jpg);
+	background-size: cover;
 }
 
 #section3 {
-  background-color: #27ae60;
-	display:inline-block;
+    background-color: rgba(0,0,0,0.40);
+	background-blend-mode: overlay;
+    display: inline-block;
+    background-image: url(media/ice-7753346_1280.jpg);
+
 }
 
 #section4 {
@@ -52,24 +69,165 @@ body {
 	display: flex;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns here */
-  grid-template-rows: repeat(3, 1);    /* Adjust the number of rows here */
-  gap: 20px; /* Adjust the gap between grid items as needed */
+#section5 {
+  background-color: #e74c3c;
+	display: flex;
 }
 
+#section6 {
+  background-color: #e74c3c;
+	display: flex;
+}
+
+#section7 {
+  background-color: #e74c3c;
+	display: flex;
+}
+
+#section8 {
+  background-color: #e74c3c;
+	display: flex;
+}
+.strip h1{
+	padding-top: 10px;
+	font-size: 180px;
+	position:relative;
+	color: white;
+  padding: 20px; /* Adjust padding to control item size and spacing */
+}
+.strip h2{
+	font-size: 60px;
+	text-align: left;
+}
+
+
+#gridsection5{
+	
+}
 #gridsection3{
-width: 100%;
-	display: grid;
-	 grid-template-columns: repeat(4, 1fr);
-	 grid-template-rows: repeat(1, 1);
-	gap: 20px;
+    place-items: stretch center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+	align-self: center;
 }
 
 .grid-item {
   background-color: #3498db; /* Change the background color */
-  padding: 20px; /* Adjust padding to control item size and spacing */
+	margin:20px;
+  padding-left: 40px; 
+padding-right:40px;
   text-align: center;
+	
+	width: 300px;
+	height: 500px;
   color: #ffffff; /* Text color */
+}
+#grid1{
+    background-color: black;
+    background-image: url(media/architecture-3528885_1280.jpg);
+	background-size: cover;
+	position:relative;
+	
+}
+.grid-item-text{
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    background-image: -webkit-linear-gradient(90deg,rgba(0,0,0,1.00) 0%,rgba(0,0,0,0.00) 100%), url(url);
+    background-image: -moz-linear-gradient(90deg,rgba(0,0,0,1.00) 0%,rgba(0,0,0,0.00) 100%), url(url);
+    background-image: -o-linear-gradient(90deg,rgba(0,0,0,1.00) 0%,rgba(0,0,0,0.00) 100%), url(url);
+    background-image: linear-gradient(0deg,rgba(0,0,0,1.00) 0%,rgba(0,0,0,0.00) 100%), url(url);
+    background-blend-mode: multiply;
+}
+
+
+
+
+.article {
+  text-align: left;
+	margin: auto;
+  padding: 20px;
+}
+
+/* Style the article title */
+.article h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style article headings */
+.article h2 {
+  font-size: 24px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Style the main article text */
+.article p {
+  font-size: 18px;
+  line-height: .8;
+  color: #666;
+}
+
+/* Style links within the article */
+.article a {
+  text-decoration: none;
+  color: #0078d4; /* A common link color in many Microsoft sites */
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+/* Add some padding and a border to images within the article */
+.article img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+/* Style for blockquotes in the article */
+.article blockquote {
+  background-color: #f5f5f5;
+  border-left: 4px solid #0078d4;
+  padding: 10px;
+  margin: 20px 0;
+  color: #666;
+}
+
+/* Style for unordered and ordered lists */
+.article ul,
+.article ol {
+  margin: 15px 0 15px 20px;
+}
+
+/* Style for list items */
+.article li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Add some space at the bottom of the article */
+.article:last-child {
+  margin-bottom: 20px;
+}
+
+.btn{
+	
+}
+
+.btnarrow{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    /* [disabled]background-color: white; */
 }
