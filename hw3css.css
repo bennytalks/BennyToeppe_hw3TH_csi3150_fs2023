@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: Arial, sans-serif; /* Choose your preferred font stack */
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f0f0f0; /* Set a default background color */
+  color: #333; /* Set a default text color */
+}
+
+.container {
+  width: 100vw;/* Full viewport width for each strip */
+  display: flex;
+	padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.half {
+  flex: 1; /* This will make both halves equal in width */
+  /* Add other styles or content as needed */
+}
+
+.strip {
+  width: 100vw; /* Full viewport width for each strip */
+  align-items: center;
+  text-align: center;
+	display:flex;
+  background-color: #3498db; /* Background color for each strip */
+  color: #fff; /* Text color */
+  font-size: 2rem;
+}
+
+#section1 {
+  background-color: #3498db;
+	align-items: center;
+	display: inline-flex;
+}
+
+#section2 {
+  background-color: #e74c3c;
+	display: flex;
+}
+
+#section3 {
+  background-color: #27ae60;
+	display:inline-block;
+}
+
+#section4 {
+  background-color: #e74c3c;
+	display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns here */
+  grid-template-rows: repeat(3, 1);    /* Adjust the number of rows here */
+  gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+#gridsection3{
+width: 100%;
+	display: grid;
+	 grid-template-columns: repeat(4, 1fr);
+	 grid-template-rows: repeat(1, 1);
+	gap: 20px;
+}
+
+.grid-item {
+  background-color: #3498db; /* Change the background color */
+  padding: 20px; /* Adjust padding to control item size and spacing */
+  text-align: center;
+  color: #ffffff; /* Text color */
+}
