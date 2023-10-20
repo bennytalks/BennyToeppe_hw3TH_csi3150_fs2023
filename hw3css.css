@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-  font-family:Cabin, "Cabin Condensed", "Cabin Condensed Medium", "Cabin Condensed SemiBold", "Cabin Medium", "Cabin SemiBold", Boho;
+  font-family:Cabin, "Cabin Condensed", "Cabin Condensed Medium", "Cabin Condensed SemiBold", "Cabin Medium", "Cabin SemiBold";
   font-size: 16px;
   line-height: .8;
   background-color: #f0f0f0; /* Set a default background color */
@@ -20,16 +20,9 @@ body {
   text-align:inherit;
 }
 
-.containervert{
-	height:100vw;
-	display: flex;
-	padding: 0px;
-  align-items: center;
-  text-align:inherit;
-}
 .half {
   flex: 1;
-	padding: 30px;
+	margin: 30px;
 	/* This will make both halves equal in width */
 }
 /* Overall horizontal strips for each section */
@@ -54,9 +47,9 @@ body {
 
 #section2 {
     display: flex;
-	background-color: rgba(0,0,0,0.40);
+	background-color: rgba(0,0,0,0.50);
 	background-blend-mode: overlay;
-    background-image: url(media/detroit-406894_1280.jpg);
+    background-image: url("media/ambassador-bridge-7663730_1280.webp");
 	background-size: cover;
 }
 
@@ -69,18 +62,29 @@ body {
 }
 
 #section4 {
-  background-color: #e74c3c;
+  background-color: rgba(0,0,0,0.40);
+	background-blend-mode: overlay;
 	display: flex;
+	background-image: url("media/nature-3806035_1280.jpg");
 }
 
 #section5 {
-  background-color: #e74c3c;
-	display: flex;
+	padding-top:300px;
+  background-color: rgba(0,0,0,0.30);
+	background-blend-mode: overlay;
+	display: inline-block;
+	background-image: url("media/heavy-frost-4342118_1280.jpg");
+	background-size: cover;
+	padding-bottom:100px;
 }
 
 #section6 {
-  background-color: #e74c3c;
-	display: flex;
+  background-color: rgba(0,0,0,0.30);
+	background-blend-mode: overlay;
+	display: inline-block;
+	background-image: url("media/belle-isle-4401867_1280.jpg");
+	background-size: cover;
+	padding-bottom:100px;
 }
 
 #section7 {
@@ -89,8 +93,12 @@ body {
 }
 
 #section8 {
-  background-color: #e74c3c;
-	display: flex;
+  background-color: rgba(0,0,0,0.30);
+	background-blend-mode: overlay;
+	display: inline-block;
+	background-image: url("media/belle-isle-4401867_1280.jpg");
+	background-size: cover;
+	padding-bottom:100px;
 }
 
 /* specific strip text header and p values */
@@ -110,21 +118,25 @@ body {
 
 
 .grid-item {
-  background-color: #3498db; /* Change the background color */
-	margin-left: 30px;
-	margin-right: 30px;
-  text-align: center;
+  background-color: #3498db; 
 	
+  text-align: center;	
 	width: 350px;
 	height: 500px;
-  color: #ffffff; /* Text color */
+  color: #ffffff; 
 }
 .grid-container{
 	width: 100%;
 	justify-content: center;
+	align-content: center;
 }
 #gridsection5{
-	
+	place-items: stretch center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+	align-self: center;
+	width:100%;
 }
 #gridsection3{
     place-items: stretch center;
@@ -138,17 +150,26 @@ body {
     place-items: stretch center;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-	align-self: center;
+    grid-template-rows: auto;
+    width: 100%;
 }
-
+#grid-profile{
+    place-items: stretch center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: center;
+	align:block;
+}
 /* grid sections for section 3 or the tours section*/
 #grid1{
     background-color: black;
     background-image: url(media/architecture-3528885_1280.jpg);
 	background-size: cover;
 	position:relative;
-	
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 #grid2{
@@ -156,7 +177,8 @@ body {
     background-image: url("media/sunrise-7794922_1280.jpg");
 	background-size: cover;
 	position:relative;
-	
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 #grid3{
@@ -164,23 +186,67 @@ body {
     background-image: url("media/detroit-3700847_1280.jpg");
 	background-size: cover;
 	position:relative;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#grid6{
+	width: 100%;
+	 background-color: black;
+    background-image: url("media/lake-superior-4018775_1280.jpg");
+	background-size: cover;
+	position:relative;
+}
+
+#grid7{
+	width: 100%;
+	 background-color: black;
+    background-image: url("media/trap-hills-4028359_1280.jpg");
+	background-size: cover;
+	position:relative;
+}
+
+#grid8{
+	width: 100%;
+	 background-color: black;
+    background-image: url("media/lighthouse-7680105_1280.jpg");
+	background-size: cover;
+	position:relative;
+}
+#grid9{
+	width: 100%;
+	 background-color: black;
+    background-image: url("media/tahquomenon-falls-73592_1280.jpg");
+	background-size: cover;
+	position:relative;
+}
+/* black circles for section 5, originally stemmed from grid system but had to branch off to its own thing*/
+.grid5{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: black;
+    margin-bottom: 20px;
+	position:relative;
+	margin:30px;
+}
+#profile{
 	
 }
-
-#grid5{
-	width: 200px;
-	height:200px;
-	border-radius: 200px;
-	padding:0px 0;
-	text-align: center;
-	line-height: 2.0;
-	background-color:black;
+.grid5 h2{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: .5;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    color: gold;
+    width: auto;
 }
 
-.grid-item h2{
-	font-size: 20px;
+.grid5 h3{
+	font-size: 18px;
 	text-align: center;
-	padding-top: 30px;
+	font-style: italic;
 
 }
 /* this is the gradient for text visibility on grids 1,2 ,3*/
@@ -205,27 +271,31 @@ body {
   text-align: left;
 	margin: auto;
   padding: 20px;
+	color:white;
+	line-height: 1.1;
+	font-weight: 100;
 }
 
 /* Style the article title */
 .article h1 {
   font-size: 28px;
-  color: #333;
+  
   margin-bottom: 10px;
 }
 
 /* Style article headings */
 .article h2 {
   font-size: 24px;
-  color: #555;
+
   margin-top: 20px;
 }
 
 /* Style the main article text */
 .article p {
-  font-size: 18px;
-  line-height: .8;
-  color: #666;
+  font-size: 16px;
+  line-height: 1;
+	font-weight: normal;
+  
 }
 
 /* Style links within the article */
@@ -272,6 +342,8 @@ body {
 .article:last-child {
   margin-bottom: 20px;
 }
+/*buttons*/
+
 
 .btn{
 	
@@ -285,4 +357,61 @@ body {
     left: 10%;
     color: white;
     /* [disabled]background-color: white; */
+}
+
+/* text query */
+
+textarea {
+	 background-color: transparent; 
+            border: 2px solid white; 
+            width: 500px; 
+            height: 30px; 
+            padding: 10px; 
+            color: grey; 
+	font-size:16px;
+	line-height: 1.5;
+	align-content: center;
+}
+
+#message{
+	 height: 90px; 
+}
+
+/* carousel*/
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-slides {
+    display: flex;
+    overflow: hidden;
+	  position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.carousel-control {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+	z-index: 1;
+}
+
+#prevBtn {
+    float:left;
+	position: absolute;
+}
+
+#nextBtn {
+    position: absolute;
+    right: 0;
 }
