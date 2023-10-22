@@ -1,3 +1,5 @@
+
+// carousel for section 7
 let slideIndex = 0;
 showSlide(slideIndex);
 
@@ -21,6 +23,8 @@ function showSlide(n) {
     
     slides[slideIndex].style.display = "block";
 }
+
+// buttons for grid display
 function handleButtonClick(btnarrow, content, hiddenText){
 
 let isTextVisible = false;
@@ -35,8 +39,6 @@ btnarrow.addEventListener('click', () => {
     hiddenText.style.display = 'block';
 	btnarrow.style.transform = 'scaleY(1)';
   }
-
-	
 	
   isTextVisible = !isTextVisible;
 });
@@ -51,7 +53,7 @@ btnarrows.forEach(btnarrow => {
   handleButtonClick(btnarrow, content, hiddenText);
 });
 }
-
+//button for drop down arrow
 function handleButtonClick2(dwnbtnarrow, content, hiddenText) 
 
 {
